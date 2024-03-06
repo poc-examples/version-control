@@ -6,7 +6,7 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: version-control
+    namespace: gitlab-system
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://github.com/poc-examples/code-respositories'
