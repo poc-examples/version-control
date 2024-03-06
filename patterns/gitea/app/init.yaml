@@ -9,8 +9,8 @@ spec:
     namespace: version-control
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://github.com/poc-examples/ml-app-of-apps'
-    path: 'openshift/operator/nfd-operator'
+    repoURL: 'https://github.com/poc-examples/code-respositories'
+    path: 'patterns/gitea/config'
     targetRevision: HEAD
   project: default
   syncPolicy:
