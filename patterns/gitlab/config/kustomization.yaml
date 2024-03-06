@@ -27,3 +27,5 @@ helmCharts:
         apiVersion: policy/v1
       hpa:
         apiVersion: autoscaling/v1
+      ingress:
+        apiVersion: config.openshift.io/v1
