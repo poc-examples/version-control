@@ -8,6 +8,6 @@ spec:
     targetPort: http
   to:
     kind: Service
-    name: repository-gitea-http
+    name: repository-bitbucket
     weight: 100
   wildcardPolicy: None
