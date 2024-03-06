@@ -1,0 +1,30 @@
+kind: GitLab
+apiVersion: apps.gitlab.com/v1beta1
+metadata:
+  name: gitlab
+spec:
+  chart:
+    values:
+      nginx-ingress:
+        isntall: false
+      certmanager:
+        install: true
+      certmanager-issuer:
+        email: cengleby@redhat.com
+      gitlab:
+        migrations:
+          initialRootPassword:
+            key: gitlab-pass
+            secret: gitlab-root-password
+      global:
+        edition: ce
+        hosts:
+          domain: apps.utxcznzv.eastus.aroapp.io
+        ingress:
+          class: none
+          annotations:
+            route.openshift.io/termination: edge
+          configureCertmanager: false
+          tls:
+            secretName: null
+    version: 7.9.0
