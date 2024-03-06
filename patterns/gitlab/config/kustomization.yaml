@@ -4,6 +4,5 @@ kind: Kustomization
 resources:
 - certman-subscription.yaml
 - gitlab-subscription.yaml
-- external-secret.yaml
 - gitlab.yaml
 - ingress.yaml
