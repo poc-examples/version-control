@@ -1,0 +1,23 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- external-secret.yaml
+# - scc.yaml
+
+# helmCharts:
+# - name: gitlab
+#   namespace: version-control
+#   releaseName: repository
+#   repo: https://charts.gitlab.io/
+#   version: 1.5.4
+#   valuesInline:
+#     gitlab:
+#       migrations:
+#         initialRootPassword:
+#           key: key_of_password
+#           secret: name_of_secret
+#     global:
+#       edition: ce
+#       hosts:
+#         domain: apps.utxcznzv.eastus.aroapp.io
