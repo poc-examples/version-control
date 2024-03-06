@@ -6,8 +6,8 @@ resources:
 - scc.yaml
 
 helmCharts:
-- name: bitbucket
+- name: gitea
   namespace: version-control
   releaseName: repository
-  repo: https://atlassian.github.io/data-center-helm-charts
-  version: 1.3.0
+  repo: https://charts.bitnami.com/bitnami
+  version: 1.5.4
