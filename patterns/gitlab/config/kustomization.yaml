@@ -15,10 +15,6 @@ helmCharts:
     certmanager-issuer:
       email: cengleby@redhat.com
     gitlab:
-      pdb:
-        apiVersion: policy/v1
-    hpa:
-      apiVersion: autoscaling/v1
       migrations:
         initialRootPassword:
           key: gitlab-pass
@@ -27,3 +23,7 @@ helmCharts:
       edition: ce
       hosts:
         domain: apps.utxcznzv.eastus.aroapp.io
+      pdb:
+        apiVersion: policy/v1
+      hpa:
+        apiVersion: autoscaling/v1
