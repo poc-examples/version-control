@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: repository
+  namespace: version-control
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: repository-gitea-http
+    weight: 100
+  wildcardPolicy: None
