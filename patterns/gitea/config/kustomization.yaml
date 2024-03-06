@@ -9,4 +9,4 @@ helmCharts:
   namespace: version-control
   releaseName: repository
   repo: https://dl.gitea.com/charts/
-  version: 1.21.7
+  version: 10.1.3
