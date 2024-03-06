@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
 # - route.yaml
-# - scc.yaml
+- scc.yaml
 
 helmCharts:
 - name: bitbucket
