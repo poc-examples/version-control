@@ -17,8 +17,8 @@ helmCharts:
     gitlab:
       pdb:
         apiVersion: policy/v1
-      hpa:
-        apiVersion: autoscaling/v1
+    hpa:
+      apiVersion: autoscaling/v1
       migrations:
         initialRootPassword:
           key: gitlab-pass
