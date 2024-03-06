@@ -12,3 +12,6 @@ subjects:
 - kind: ServiceAccount
   name: repository-gitea
   namespace: version-control
+- kind: ServiceAccount
+  name: repository-postgresql
+  namespace: version-control
