@@ -18,7 +18,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: repository
-  namespace: version-control
+  namespace: gitlab-system
 spec:
   port:
     targetPort: http
