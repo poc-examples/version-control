@@ -6,8 +6,8 @@ resources:
 # - scc.yaml
 
 helmCharts:
-- name: gogs
+- name: bitbucket
   namespace: version-control
   releaseName: repository
-  repo: https://charts.helm.sh/incubator
-  version: 0.7.14
+  repo: https://atlassian.github.io/data-center-helm-charts
+  version: 1.3.0
