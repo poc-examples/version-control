@@ -1,0 +1,23 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: version-control-app
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: version-control
+    server: 'https://kubernetes.default.svc'
+  source:
+    repoURL: 'https://github.com/poc-examples/code-respositories'
+    path: 'patterns/gitea/config'
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    managedNamespaceMetadata:
+      labels:
+        argocd.argoproj.io/managed-by: openshift-gitops
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      prune: true

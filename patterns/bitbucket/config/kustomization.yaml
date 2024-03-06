@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- route.yaml
+- scc.yaml
+
+helmCharts:
+- name: bitbucket
+  namespace: version-control
+  releaseName: repository
+  repo: https://atlassian.github.io/data-center-helm-charts
+  version: 1.3.0
