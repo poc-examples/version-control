@@ -10,7 +10,7 @@ helmCharts:
   namespace: version-control
   releaseName: repository
   repo: https://charts.gitlab.io/
-  version: 1.5.4
+  version: 7.9.1
   valuesInline:
     certmanager-issuer:
       email: cengleby@redhat.com
